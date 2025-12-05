@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Casona</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+    <header class="header-cocina">
+        <div class="contenedor-superior-header">
+            <img src="../Imagenes/logo.jpeg" alt="logo La Casona">
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./contactos.html">Contactos</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" 
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                    Productos
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./pagina-cuadros.html">Cuadros</a></li>
+                                    <li><a class="dropdown-item" href="./pagina-jardin.html">Jardín</a></li>
+                                    <li><a class="dropdown-item" href="./pagina-living.html">Living</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <main class="main">
+
+        <div class="caja-productos">
+
+            <article class="productos">
+                <img src="../Imagenes/tela.jpeg" alt="mantel de tela artesanal">
+                <h2  class="nombre-producto">Manteles</h2>
+                <p class="descripcion">Mantel rectangular de tejido blanco con detalles florales y encaje dorado en los bordes con aplicación central a juego. Medidas: 160 - 110 cm con caída incluida.</p>
+                <p class="precio">35.000$</p>
+                <button class="mb-3">Comprar</button>
+            </article>
+
+
+            <article class="productos">
+
+                <div id="carousel-ceramica" class="carousel slide">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../Imagenes/platos-ceramica-blanco.jpeg" 
+                                class="d-block w-100" 
+                                alt="plato de Ceramica blanco">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="../Imagenes/plato-ceramica-negro.jpeg" 
+                                class="d-block w-100" 
+                                alt="plato de ceramica negro">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="../Imagenes/plato-ceramica-azul.jpeg" 
+                                class="d-block w-100" 
+                                alt="platos de ceramica azul">
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carousel-ceramica" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button"
+                            data-bs-target="#carousel-ceramica" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+
+                </div>
+
+                <h2  class="nombre-producto">Platos De Ceramica</h2>
+                <p class="descripcion">Platos de cerámica disponibles en color blanco, negro o azul, elaborados de forma artesanal.</p>
+                <p class="precio">50.000$</p>
+                <button class="mb-3">Comprar</button>
+            </article>
+
+
+            <article class="productos">
+                <img src="../Imagenes/cubiertos.jpeg" alt="cubiertos">
+                <h2  class="nombre-producto">Cubiertos</h2>
+                <p class="descripcion">Set de cubiertos de acero inoxidable con mango de madera natural, diseño moderno y resistente. Incluye cuchillo, tenedor y cucharas con acabado pulido.</p>
+                <p class="precio">15.000$</p>
+                <button class="mb-3">Comprar</button>
+            </article>
+
+
+            <article class="productos">
+                <img src="../Imagenes/tablas-de-madera.jpeg" alt="tabla-de-madera">
+                <h2  class="nombre-producto">Tabla De Madera</h2>
+                <p class="descripcion">Tabla de asado artesanal hecha en madera maciza, con bordes redondeados y canaletas para jugos. Incluye manijas de asta natural que aportan un diseño rústico y único.</p>
+                <p class="precio">150.000$</p>
+                <button class="mb-3">Comprar</button>
+            </article>
+
+        </div>
+
+    </main>
+
+    <footer id="contactos">
+        <div class="footer-flex">
+
+            <div class="links-internos">
+                <a href="../index.html">Inicio</a>
+                <a href="./contactos.html">Contactos</a>
+            </div>
+
+            <div class="links-externos">
+                <a href="https://www.instagram.com/casona.home/" 
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                    <img class="footer-logos" src="../Imagenes/logo-instagram.jpeg" alt="Instagram">
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+            crossorigin="anonymous">
+    </script>
+
+</body>
+</html>
