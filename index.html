@@ -10,70 +10,55 @@
 <body>
 
 
-
-    <header class="header-index" id="inicio">
+<header class="header-index" id="inicio">
     <div class="contenedor-superior-header">
-    <img src="./Imagenes/logo.jpeg" alt="logo La Casona">
+        <img src="./Imagenes/logo.jpeg" alt="logo La Casona">
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./paginas/contactos.html">Contactos</a>
+                        </li>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./paginas/contactos.html">Contactos</a>
-                </li>
-
-                
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Productos
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="./paginas/pagina-cocina.html">Cocina</a></li>
-                        <li><a class="dropdown-item" href="./paginas/pagina-cuadros.html">Cuadros</a></li>
-                        <li><a class="dropdown-item" href="./paginas/pagina-jardin.html">Jardín</a></li>
-                        <li><a class="dropdown-item" href="./paginas/pagina-living.html">Living</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./paginas/pagina-cocina.html">Cocina</a></li>
+                                <li><a class="dropdown-item" href="./paginas/pagina-cuadros.html">Cuadros</a></li>
+                                <li><a class="dropdown-item" href="./paginas/pagina-jardin.html">Jardín</a></li>
+                                <li><a class="dropdown-item" href="./paginas/pagina-living.html">Living</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
-</nav>
-
+                </div>
+            </div>
+        </nav>
     </div>
 
-
-        <div class="contenedor-inferior-header"> 
-            <h1 class="index-titulados">La Casona Home</h1>
-            <div>
+    <div class="contenedor-inferior-header">
+        <h1 class="index-titulados">La Casona Home</h1>
+        <div>
             <h2>Decoracion hecha con amor para llenar tu hogar de calidez</h2>
             <img src="./Imagenes/BANNER-INTRO-SILLON-3.jpg" alt="banner">
-            </div>
         </div>
+    </div>
+</header>
 
-
-        
-
-    </header>
-        
 
     <main>
         <section class="categorias">
@@ -113,18 +98,17 @@
     </main>
 
 
-    <footer id="contactos">
+    <footer>
         <div class="footer-flex">
             <div class="links-internos">
-                <a href="#inicio">Inicio</a>
+                <a href="./index.html">Inicio</a>
                 <a href="./paginas/contactos.html">Contactos</a>
             </div>
             <div class="links-externos">
                 <a href="https://www.instagram.com/casona.home/" target="_blank" rel="noopener noreferrer">
-                    <img class="footer-logos" src="./Imagenes/logo-instagram.jpeg" alt="Instagram">
+                    <img class="footer-logos" src="../Imagenes/logo-instagram.jpeg" alt="Instagram">
                 </a>
             </div>
-
         </div>
     </footer>
 
