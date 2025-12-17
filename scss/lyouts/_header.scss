@@ -1,0 +1,55 @@
+
+@import "./utilities/extends.scss";
+
+.header-index{
+    height: 95vh;                  
+    background-attachment: fixed;  
+}
+
+header img{
+    width: 10rem; 
+}
+
+.contenedor-superior-header{
+    @extend %containers;
+    justify-content: space-between;
+    background-color: #F0EBE4;
+    padding: 10px;
+}
+
+
+.contenedor-inferior-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
+    height: 80vh;
+    background-color:#E7DFD8;
+
+    div{
+    @extend %containers;
+    justify-content: center;
+    }
+
+    img{
+    width: 100%;
+    max-width: 450px;           
+    height: auto;  
+    }
+
+    h2{
+    width: 100%;
+    max-width: 500px;          
+    padding: 10px;
+    text-align: center; 
+    }
+
+    a{ 
+    background-color: rgb(38, 36, 36);
+    border-radius: 5%;
+    padding: 1rem;     
+    }
+
+}
+
+

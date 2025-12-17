@@ -1,0 +1,39 @@
+footer{
+    background-color: #D8CFC6;
+    height: 18vh; 
+
+    h3{
+        color: #000000;
+        text-transform: capitalize;
+    }
+
+    a{
+        color: #000000;
+        text-transform: capitalize;  
+    }
+}
+
+
+.footer-logos{
+    width: 2rem; 
+}
+
+.footer-flex{
+    display: grid; 
+    gap:1rem;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    text-align: center;
+    height: 18vh;
+}
+
+.links-internos{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.links-externos img{
+    border-radius: 30%;
+}
