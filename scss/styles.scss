@@ -1,9 +1,9 @@
 @import "./utilities/extends";
-@import "./lyouts/header";
+@import "./utilities/variable.scss";
 @import "./lyouts/footer";
-@import "./lyouts/mq";
+@import "./lyouts/header";
 @import "./lyouts/main";
-
+@import "./lyouts/mq";
 
 
 *{
@@ -14,10 +14,24 @@
 }
 
 body {
-    background: blue;
+    background: $color-blanco;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
 }
 
 
+html {
+    height: 100%;
+    margin: 0;
+}
+
+
+
+main {
+    flex: 1;
+}
 
 
 
@@ -32,7 +46,7 @@ ul{
 
 /* Enlaces generales */
 a {
-    color: black;
+    color: $color-negro;
     text-decoration: none; 
 }
 
@@ -51,74 +65,11 @@ h2{
 }
 
 h3{
-    font-size: 1rem !important; 
+    font-size: 1rem !important;
+    text-align: center;
 }
 
 form{
     max-width: 500px; 
 }
-
-
-.categorias h2{
-    font-size: 2rem;
-    text-align: center;
-}
-
-.categorias-flex {
-    display: flex;               
-    flex-direction: row;
-    gap: 1rem;
-    padding: 15px;
-    align-items: center;
-    justify-content: center;
-}
-
-.categorias-imagenes {
-    width: 200px;
-    height: auto;
-    border-radius: 10%; 
-}
-
-
-.categorias-items{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center ;
-}
-
-
-
-
-
-.header-cocina , .header-living , .header-jardin , .header-cuadros{
-    height: 20vh;
-}
-
-.main{
-    height: 70%;
-}
-
-
-.titulo{
-    text-align: center;
-    text-decoration: underline;
-}
-
-
-
-
-.contact-page {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-page main {
-    flex: 1; 
-}
-
-
-
-
 

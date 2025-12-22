@@ -1,14 +1,17 @@
+
+@import "../utilities/variable.scss";
+
 footer{
-    background-color: #D8CFC6;
-    height: 18vh; 
+    background-color: $color-grisacio;
+    padding: 2rem 0;
 
     h3{
-        color: #000000;
+        color: $color-negro;
         text-transform: capitalize;
     }
 
     a{
-        color: #000000;
+        color: $color-negro;
         text-transform: capitalize;  
     }
 }
@@ -18,13 +21,12 @@ footer{
     width: 2rem; 
 }
 
-.footer-flex{
-    display: grid; 
-    gap:1rem;
-    grid-template-columns: repeat(2,1fr);
+.footer-flex {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     text-align: center;
-    height: 18vh;
 }
 
 .links-internos{

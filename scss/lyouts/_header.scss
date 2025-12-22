@@ -1,5 +1,6 @@
 
-@import "./utilities/extends.scss";
+@import "../utilities/extends";
+@import "../utilities/variable.scss";
 
 .header-index{
     height: 95vh;                  
@@ -11,7 +12,7 @@ header img{
 }
 
 .contenedor-superior-header{
-    @extend %containers;
+    @extend %displayrow;
     justify-content: space-between;
     background-color: #F0EBE4;
     padding: 10px;
@@ -19,15 +20,13 @@ header img{
 
 
 .contenedor-inferior-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center ;
+    @extend %displaycolum;
     justify-content: center;
     height: 80vh;
-    background-color:#E7DFD8;
+    background-color:$color-grisacio;
 
     div{
-    @extend %containers;
+    @extend %displayrow;
     justify-content: center;
     }
 
@@ -45,11 +44,9 @@ header img{
     }
 
     a{ 
-    background-color: rgb(38, 36, 36);
+    background-color: #262424;
     border-radius: 5%;
     padding: 1rem;     
     }
 
 }
-
-
